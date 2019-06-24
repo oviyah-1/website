@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--this is to scale for mobile websites -->
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk"> <img src="/home/sachin/Desktop/newsite/img/logo.png" alt=""> </a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navres">
+		<span class="navbar-toggler-icon"></span>
+
+	</button>
+	<div class="collapse navbar-collapse" id="navres">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active"> <a class="nav-link" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk">HOME</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk">ABOUT</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk">SERVICES</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk">TEAM</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="https://www.youtube.com/watch?v=Pb5ibZ5HpEk">CONNECT</a> </li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel Slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="/home/sachin/Desktop/newsite/img/background.png" alt="">
+		<div class="carousel-caption">
+			<h1 class="display-2">Bootstrap</h1>
+			<h3>Complete website layout</h3>
+			<button class="btn btn-outline-light btn-lg"type="button" name="button"> VIEW DEMO</button>
+			<button id="bt1" class="btn btn-primary btn-lg"type="button" name="button"> GET STARTED</button>
+
+		</div>
+
+	</div>
+	<div class="carousel-item">
+		<img src="/home/sachin/Desktop/newsite/img/background2.png" alt="">
+
+	</div>
+	<div class="carousel-item">
+		<img src="/home/sachin/Desktop/newsite/img/background3.png" alt="">
+
+	</div>
+
+</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead"> A Web Hosting Serive allows individuals and organizations to make their website accessible via the world wilde web.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"> <button type="button" name="button" class="btn btn-outline-secondary btn-lg"> Web Hosting</button> </a>
+		</div>
+	</div>
+
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+	<div class=" row welcome text-center"> <!--- Welcome is a class that will be coded later to give it a good width -->
+		<div class="col-12">
+			<h1 class="display-4">Built with ease.</h1>
+
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead"> welcome to my bootstrap tutorial Bootstrap is a free and open-source front -end library with HTML and css based designs.</p>
+
+		</div>
+	</div>
+
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>HTML5</h3>
+			<p>Built with the latest version of HTML,HTML5.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-bold"></i>
+			<h3>BOOTSTRAP4</h3>
+			<p>Built with the latest version of BOOTSTRAP,BOOTSTRAP4.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<i class="fab fa-css3"></i>
+			<h3>HTML5</h3>
+			<p>Built with the latest version of css3,css3.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2 id="big1">If you built it....</h2>
+			<p id="big">The columsns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+			<p id="big">Resize the browser window to see the effect.Responsive web designs has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+			<p id="big">It can display the web page differently depending in the screen size or viewing device.</p>
+			<br>
+			<a id="but" href="#" class="btn btn-primary">LEARN MORE</a>
+		</div>
+		<div class="col-lg-6">
+			<img class="img-fluid" src="/home/sachin/Desktop/newsite/img/desk.png" alt="">
+		</div>
+
+	</div>
+
+</div>
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+		</div>
+	</div>
+</figure>
+
+<!--- Emoji Section -->
+<!-- <button class="btn btn-outline-light btn-lg"type="button" name="button" data-toggle="collapse" data-target="#emoji">emoji</button> -->
+
+
+<div class="container-fluid padding">
+	<div id="dpar"class="row text-center">
+		<div class="col-12">
+			<h1 class="display-4">Below Are Some EMOJIS</h1>
+
+		</div>
+		<div class="col-12">
+			<h2>Click Them To See Them In Action..</h2>
+
+		</div>
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button id="e1" class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji">chicken</button>
+		</div>
+		<div  class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button id="e1" class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji1">panda</button>
+		</div>
+		<div  class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button id="e1" class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji2">poo</button>
+		</div>
+		<div  class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button id="e1" class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji3">unicorn</button>
+		</div>
+			<!-- <button class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji">emoji</button>
+			<button class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji">emoji</button>
+			<button class="btn btn-primary btn-lg mr-5"type="button" name="button" data-toggle="collapse" data-target="#emoji">emoji</button> -->
+			<div class="container">
+
+
+			<div id="emoji" class="collapse" data-parent="#dpar">
+					<div class="col-sm-12 col-md-6 col-lg-12 col-xl-12">
+						<img class="gif" src="/home/sachin/Desktop/newsite/img/gif/panda.gif" alt="">
+					</div>
+			</div>
+			<div id="emoji1" class="collapse" data-parent="#dpar">
+					<div class="col-sm-12 col-md-12">
+						<img class="gif" src="/home/sachin/Desktop/newsite/img/gif/poo.gif" alt="">
+					</div>
+			</div>
+			<div id="emoji2" class="collapse" data-parent="#dpar">
+					<div class="col-sm-12 col-md-12">
+						<img class="gif" src="/home/sachin/Desktop/newsite/img/gif/unicorn.gif" alt="">
+					</div>
+			</div>
+			<div id="emoji3" class="collapse" data-parent="#dpar">
+					<div class="col-sm-12 col-md-12">
+						<img class="gif" src="/home/sachin/Desktop/newsite/img/gif/chicken.gif" alt="">
+					</div>
+					</div>
+			</div>
+
+	</div>
+</div>
+<hr class="my-4">
+<!-- <div id="emoji" class="collapse">
+
+</div> -->
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">MEET THE TEAM</h1>
+		</div>
+		<hr>
+	</div>
+
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/home/sachin/Desktop/newsite/img/team1.png" alt="">
+				<div class="card-body">
+					<h4 class="card-title">JOHN DOE</h4>
+					<p class="card-text">joe is an internet enterpenur with almost 20 years of experience.</p>
+					<a href="#" class="btn btn-outline-secondary">SEE PROFILE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/home/sachin/Desktop/newsite/img/team2.png" alt="">
+				<div class="card-body">
+					<h4 class="card-title">EMMA WATSON</h4>
+					<p class="card-text">joe is an internet enterpenur with almost 20 years of experience.</p>
+					<a href="#" class="btn btn-outline-secondary">SEE PROFILE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/home/sachin/Desktop/newsite/img/team3.png" alt="">
+				<div class="card-body">
+					<h4 class="card-title">ANOTHER JOHN DOE</h4>
+					<p class="card-text">joe is an internet enterpenur with almost 20 years of experience.</p>
+					<a href="#" class="btn btn-outline-secondary">SEE PROFILE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2 id="big1">Our Philosophy.</h2>
+			<p id="big">The columsns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+			<p id="big">Resize the browser window to see the effect.Responsive web designs has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+			<br>
+
+		</div>
+		<div class="col-lg-6">
+			<img class="img-fluid" src="/home/sachin/Desktop/newsite/img/bootstrap2.png" alt="">
+		</div>
+
+	</div>
+
+</div>
+<hr class="my-4">
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"> <i class="fab fa-facebook"></i></a>
+			<a href="#"> <i class="fab fa-twitter"></i></a>
+			<a href="#"> <i class="fab fa-google-plus-g"></i></a>
+			<a href="#"> <i class="fab fa-instagram"></i></a>
+			<a href="#"> <i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+	<div class="row text-center">
+		<div class="col-md-4">
+			<img src="/home/sachin/Desktop/newsite/img/w3newbie.png" alt="">
+			<hr class="light">
+			<p>+91 8939342990</p>
+			<p>sacthedon56@gmail.com</p>
+			<p>Anna Nagar West Extension</p>
+			<p>Chennai 600101</p>
+		</div>
+		<div class="col-md-4">
+			<hr class="light">
+			<h5>Our Hours</h5>
+			<hr class="light">
+			<p>Monday 5:30-4:00</p>
+			<p>Sunday 8:30-5:40</p>
+			<p>Friday closed</p>
+		</div>
+		<div class="col-md-4">
+			<hr class="light">
+			<h5>Our Locations</h5>
+			<hr class="light">
+			<p>Chennai </p>
+			<p>America </p>
+			<p>Singapore</p>
+		</div>
+		<div class="col-12">
+		<hr class="light1">
+		<h5>&copy; sac.com</h5>
+		</div>
+	</div>
+
+</div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--- Check out my course on Udemy! -->
+<!-- <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;">
+	<a href="http://bit.ly/advanced-bootstrap-course" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-udemy-banner.png" style="max-width: 100%; min-width: 100%;"></a>
+</div> -->
